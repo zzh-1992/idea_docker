@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 /**
@@ -19,11 +21,12 @@ public class Index {
     @Value("${server.port}")
     int port;
 
-    @GetMapping("/index")
+    @GetMapping("/")
     public String index(){
+        System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss")));
         int i = 1999;
         int n = get(i);
-        return new Date() + "  Grapefruit 端口号:" + port + n;
+        return new Date() + "  Grapefruit 端口号:" + port + " " +n;
     }
     public int get(int j){
         j = j + 2;

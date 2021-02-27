@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.grapefruit</groupId>
-	<artifactId>8888</artifactId>
+	<artifactId>6666</artifactId>
 	<version>1.0</version>
-	<name>8888</name>
+	<name>6666</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
