@@ -1,0 +1,10 @@
+
+
+
+
+
+GET http://localhost:6666/grapefruit/homepage
+
+
+###
+GET http://47.115.42.52:8080/grapefruit/homepage
